@@ -1,0 +1,142 @@
+\hypertarget{classDL_1_1Associative}{
+\section{DL::Associative$<$ Key\-Type, Compare $>$ Class Template Reference}
+\label{classDL_1_1Associative}\index{DL::Associative@{DL::Associative}}
+}
+{\tt \#include $<$Associative.hpp$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef Compare \hyperlink{classDL_1_1Associative_w0}{compare\_\-type}
+\item 
+typedef Key\-Type \hyperlink{classDL_1_1Associative_w1}{key\_\-type}
+\item 
+typedef std::map$<$ \hyperlink{classDL_1_1Associative_w1}{key\_\-type}, \hyperlink{classDL_1_1DelegateBase}{Delegate\-Base} $\ast$, \hyperlink{classDL_1_1Associative_w0}{compare\_\-type} $>$ \hyperlink{classDL_1_1Associative_w2}{map\_\-type}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classDL_1_1Associative_a0}{Associative} ()
+\item 
+virtual \hyperlink{classDL_1_1Associative_a1}{$\sim$Associative} ()
+\item 
+void \hyperlink{classDL_1_1Associative_a2}{insert} (\hyperlink{classDL_1_1Associative_w1}{key\_\-type} key, \hyperlink{namespaceDL_a0}{Delegate\-Obj} Callback)
+\item 
+void \hyperlink{classDL_1_1Associative_a3}{emit} (\hyperlink{classDL_1_1Associative_w1}{key\_\-type} key)
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+std::map$<$ \hyperlink{classDL_1_1Associative_w1}{key\_\-type}, \hyperlink{classDL_1_1DelegateBase}{Delegate\-Base} $\ast$, \hyperlink{classDL_1_1Associative_w0}{compare\_\-type} $>$ \hyperlink{classDL_1_1Associative_r0}{m\_\-data}
+\end{CompactItemize}
+\subsubsection*{template$<$class Key\-Type, class Compare = std::less$<$Key\-Type$>$$>$ class DL::Associative$<$ Key\-Type, Compare $>$}
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classDL_1_1Associative_w0}{
+\index{DL::Associative@{DL::Associative}!compare_type@{compare\_\-type}}
+\index{compare_type@{compare\_\-type}!DL::Associative@{DL::Associative}}
+\subsubsection[compare\_\-type]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key\-Type, class Compare = std::less$<$Key\-Type$>$$>$ typedef Compare \hyperlink{classDL_1_1Associative}{DL::Associative}$<$ Key\-Type, Compare $>$::\hyperlink{classDL_1_1Associative_w0}{compare\_\-type}}}
+\label{classDL_1_1Associative_w0}
+
+
+
+
+Definition at line 40 of file Associative.hpp.\hypertarget{classDL_1_1Associative_w1}{
+\index{DL::Associative@{DL::Associative}!key_type@{key\_\-type}}
+\index{key_type@{key\_\-type}!DL::Associative@{DL::Associative}}
+\subsubsection[key\_\-type]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key\-Type, class Compare = std::less$<$Key\-Type$>$$>$ typedef Key\-Type \hyperlink{classDL_1_1Associative}{DL::Associative}$<$ Key\-Type, Compare $>$::\hyperlink{classDL_1_1Associative_w1}{key\_\-type}}}
+\label{classDL_1_1Associative_w1}
+
+
+
+
+Definition at line 41 of file Associative.hpp.\hypertarget{classDL_1_1Associative_w2}{
+\index{DL::Associative@{DL::Associative}!map_type@{map\_\-type}}
+\index{map_type@{map\_\-type}!DL::Associative@{DL::Associative}}
+\subsubsection[map\_\-type]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key\-Type, class Compare = std::less$<$Key\-Type$>$$>$ typedef std::map$<$ \hyperlink{classDL_1_1Associative_w1}{key\_\-type}, \hyperlink{classDL_1_1DelegateBase}{Delegate\-Base}$\ast$ , \hyperlink{classDL_1_1Associative_w0}{compare\_\-type} $>$ \hyperlink{classDL_1_1Associative}{DL::Associative}$<$ Key\-Type, Compare $>$::\hyperlink{classDL_1_1Associative_w2}{map\_\-type}}}
+\label{classDL_1_1Associative_w2}
+
+
+
+
+Definition at line 42 of file Associative.hpp.
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDL_1_1Associative_a0}{
+\index{DL::Associative@{DL::Associative}!Associative@{Associative}}
+\index{Associative@{Associative}!DL::Associative@{DL::Associative}}
+\subsubsection[Associative]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key\-Type, class Compare = std::less$<$Key\-Type$>$$>$ \hyperlink{classDL_1_1Associative}{DL::Associative}$<$ Key\-Type, Compare $>$::\hyperlink{classDL_1_1Associative}{Associative} ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classDL_1_1Associative_a0}
+
+
+
+
+Definition at line 44 of file Associative.hpp.\hypertarget{classDL_1_1Associative_a1}{
+\index{DL::Associative@{DL::Associative}!~Associative@{$\sim$Associative}}
+\index{~Associative@{$\sim$Associative}!DL::Associative@{DL::Associative}}
+\subsubsection[$\sim$Associative]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key\-Type, class Compare = std::less$<$Key\-Type$>$$>$ virtual \hyperlink{classDL_1_1Associative}{DL::Associative}$<$ Key\-Type, Compare $>$::$\sim$\hyperlink{classDL_1_1Associative}{Associative} ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classDL_1_1Associative_a1}
+
+
+
+
+Definition at line 45 of file Associative.hpp.
+
+References stdext::foreach(), and DL::Associative$<$ Key\-Type, Compare $>$::m\_\-data.
+
+Here is the call graph for this function:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classDL_1_1Associative_a1_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDL_1_1Associative_a3}{
+\index{DL::Associative@{DL::Associative}!emit@{emit}}
+\index{emit@{emit}!DL::Associative@{DL::Associative}}
+\subsubsection[emit]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key\-Type, class Compare = std::less$<$Key\-Type$>$$>$ void \hyperlink{classDL_1_1Associative}{DL::Associative}$<$ Key\-Type, Compare $>$::emit (\hyperlink{classDL_1_1Associative_w1}{key\_\-type} {\em key})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classDL_1_1Associative_a3}
+
+
+
+
+Definition at line 53 of file Associative.hpp.
+
+References DL::Associative$<$ Key\-Type, Compare $>$::m\_\-data.
+
+Referenced by main().\hypertarget{classDL_1_1Associative_a2}{
+\index{DL::Associative@{DL::Associative}!insert@{insert}}
+\index{insert@{insert}!DL::Associative@{DL::Associative}}
+\subsubsection[insert]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key\-Type, class Compare = std::less$<$Key\-Type$>$$>$ void \hyperlink{classDL_1_1Associative}{DL::Associative}$<$ Key\-Type, Compare $>$::insert (\hyperlink{classDL_1_1Associative_w1}{key\_\-type} {\em key}, \hyperlink{namespaceDL_a0}{Delegate\-Obj} {\em Callback})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classDL_1_1Associative_a2}
+
+
+
+
+Definition at line 49 of file Associative.hpp.
+
+References DL::Associative$<$ Key\-Type, Compare $>$::m\_\-data.
+
+Referenced by main().
+
+\subsection{Member Data Documentation}
+\hypertarget{classDL_1_1Associative_r0}{
+\index{DL::Associative@{DL::Associative}!m_data@{m\_\-data}}
+\index{m_data@{m\_\-data}!DL::Associative@{DL::Associative}}
+\subsubsection[m\_\-data]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key\-Type, class Compare = std::less$<$Key\-Type$>$$>$ std::map$<$ \hyperlink{classDL_1_1Associative_w1}{key\_\-type} , \hyperlink{classDL_1_1DelegateBase}{Delegate\-Base}$\ast$ , \hyperlink{classDL_1_1Associative_w0}{compare\_\-type} $>$ \hyperlink{classDL_1_1Associative}{DL::Associative}$<$ Key\-Type, Compare $>$::\hyperlink{classDL_1_1Associative_r0}{m\_\-data}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classDL_1_1Associative_r0}
+
+
+
+
+Definition at line 60 of file Associative.hpp.
+
+Referenced by DL::Associative$<$ Key\-Type, Compare $>$::emit(), DL::Associative$<$ Key\-Type, Compare $>$::insert(), and DL::Associative$<$ Key\-Type, Compare $>$::$\sim$Associative().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/data/callbackext/Container/\hyperlink{Associative_8hpp}{Associative.hpp}\end{CompactItemize}

@@ -1,0 +1,97 @@
+.TH "DL::Associative" 3 "11 Mar 2005" "Version 0.0.4" "Extended C++ Callback Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DL::Associative \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <Associative.hpp>\fP
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef Compare \fBcompare_type\fP"
+.br
+.ti -1c
+.RI "typedef KeyType \fBkey_type\fP"
+.br
+.ti -1c
+.RI "typedef std::map< \fBkey_type\fP, \fBDelegateBase\fP *, \fBcompare_type\fP > \fBmap_type\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAssociative\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~Associative\fP ()"
+.br
+.ti -1c
+.RI "void \fBinsert\fP (\fBkey_type\fP key, \fBDelegateObj\fP Callback)"
+.br
+.ti -1c
+.RI "void \fBemit\fP (\fBkey_type\fP key)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::map< \fBkey_type\fP, \fBDelegateBase\fP *, \fBcompare_type\fP > \fBm_data\fP"
+.br
+.in -1c
+
+.SS "template<class KeyType, class Compare = std::less<KeyType>> class DL::Associative< KeyType, Compare >"
+
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<class KeyType, class Compare = std::less<KeyType>> typedef Compare \fBDL::Associative\fP< KeyType, Compare >::\fBcompare_type\fP"
+.PP
+Definition at line 40 of file Associative.hpp.
+.SS "template<class KeyType, class Compare = std::less<KeyType>> typedef KeyType \fBDL::Associative\fP< KeyType, Compare >::\fBkey_type\fP"
+.PP
+Definition at line 41 of file Associative.hpp.
+.SS "template<class KeyType, class Compare = std::less<KeyType>> typedef std::map< \fBkey_type\fP, \fBDelegateBase\fP* , \fBcompare_type\fP > \fBDL::Associative\fP< KeyType, Compare >::\fBmap_type\fP"
+.PP
+Definition at line 42 of file Associative.hpp.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class KeyType, class Compare = std::less<KeyType>> \fBDL::Associative\fP< KeyType, Compare >::\fBAssociative\fP ()\fC [inline]\fP"
+.PP
+Definition at line 44 of file Associative.hpp.
+.SS "template<class KeyType, class Compare = std::less<KeyType>> virtual \fBDL::Associative\fP< KeyType, Compare >::~\fBAssociative\fP ()\fC [inline, virtual]\fP"
+.PP
+Definition at line 45 of file Associative.hpp.
+.PP
+References stdext::foreach(), and DL::Associative< KeyType, Compare >::m_data.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class KeyType, class Compare = std::less<KeyType>> void \fBDL::Associative\fP< KeyType, Compare >::emit (\fBkey_type\fP key)\fC [inline]\fP"
+.PP
+Definition at line 53 of file Associative.hpp.
+.PP
+References DL::Associative< KeyType, Compare >::m_data.
+.PP
+Referenced by main().
+.SS "template<class KeyType, class Compare = std::less<KeyType>> void \fBDL::Associative\fP< KeyType, Compare >::insert (\fBkey_type\fP key, \fBDelegateObj\fP Callback)\fC [inline]\fP"
+.PP
+Definition at line 49 of file Associative.hpp.
+.PP
+References DL::Associative< KeyType, Compare >::m_data.
+.PP
+Referenced by main().
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class KeyType, class Compare = std::less<KeyType>> std::map< \fBkey_type\fP , \fBDelegateBase\fP* , \fBcompare_type\fP > \fBDL::Associative\fP< KeyType, Compare >::\fBm_data\fP\fC [private]\fP"
+.PP
+Definition at line 60 of file Associative.hpp.
+.PP
+Referenced by DL::Associative< KeyType, Compare >::emit(), DL::Associative< KeyType, Compare >::insert(), and DL::Associative< KeyType, Compare >::~Associative().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Extended C++ Callback Library from the source code.

@@ -1,0 +1,13 @@
+base referer
+rect $Delegate0_8hpp.html 342,8 449,32
+rect $Delegate1_8hpp.html 342,56 449,80
+rect $Delegate2_8hpp.html 342,104 449,128
+rect $Delegate3_8hpp.html 342,152 449,176
+rect $Delegate4_8hpp.html 342,200 449,224
+rect $Delegate5_8hpp.html 342,248 449,272
+rect $Delegate6_8hpp.html 342,296 449,320
+rect $Delegate7_8hpp.html 342,344 449,368
+rect $Delegate8_8hpp.html 342,392 449,416
+rect $Delegate9_8hpp.html 342,440 449,464
+rect $Delegate10_8hpp.html 338,488 453,512
+rect $DelegateBase_8hpp.html 501,248 632,272

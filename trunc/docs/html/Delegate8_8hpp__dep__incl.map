@@ -1,0 +1,4 @@
+base referer
+rect $DelegateN_8hpp.html 337,32 617,56
+rect $DelegateTest2_8cc.html 666,8 930,32
+rect $DelegateTest3_8cc.html 666,56 930,80

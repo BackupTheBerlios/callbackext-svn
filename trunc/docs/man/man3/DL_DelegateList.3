@@ -1,0 +1,82 @@
+.TH "DL::DelegateList" 3 "11 Mar 2005" "Version 0.0.4" "Extended C++ Callback Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DL::DelegateList \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <DelegateList.hpp>\fP
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~DelegateList\fP ()"
+.br
+.ti -1c
+.RI "void \fBadd\fP (\fBDelegateObj\fP m_obj)"
+.br
+.ti -1c
+.RI "void \fBreverse_call\fP ()"
+.br
+.ti -1c
+.RI "void \fBcall\fP ()"
+.br
+.ti -1c
+.RI "void \fBoperator()\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::deque< \fBDelegateBase\fP * > \fBm_obj_list\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual DL::DelegateList::~\fBDelegateList\fP ()\fC [inline, virtual]\fP"
+.PP
+Definition at line 32 of file DelegateList.hpp.
+.PP
+References stdext::foreach(), and m_obj_list.
+.SH "Member Function Documentation"
+.PP 
+.SS "void DL::DelegateList::add (\fBDelegateObj\fP m_obj)\fC [inline]\fP"
+.PP
+Definition at line 36 of file DelegateList.hpp.
+.PP
+References m_obj_list.
+.PP
+Referenced by main().
+.SS "void DL::DelegateList::call ()\fC [inline]\fP"
+.PP
+Definition at line 44 of file DelegateList.hpp.
+.PP
+References stdext::foreach(), and m_obj_list.
+.PP
+Referenced by main().
+.SS "void DL::DelegateList::operator() ()\fC [inline]\fP"
+.PP
+\fBDelegateList::operator()()\fP is used to emits all stored Delegates<>
+.PP
+Definition at line 50 of file DelegateList.hpp.
+.PP
+References stdext::foreach(), and m_obj_list.
+.SS "void DL::DelegateList::reverse_call ()\fC [inline]\fP"
+.PP
+Definition at line 40 of file DelegateList.hpp.
+.PP
+References stdext::foreach_reverse(), and m_obj_list.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::deque<\fBDelegateBase\fP*> \fBDL::DelegateList::m_obj_list\fP\fC [private]\fP"
+.PP
+Definition at line 55 of file DelegateList.hpp.
+.PP
+Referenced by add(), call(), operator()(), reverse_call(), and ~DelegateList().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Extended C++ Callback Library from the source code.

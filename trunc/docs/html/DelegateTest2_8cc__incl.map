@@ -1,0 +1,4 @@
+base referer
+rect $DelegateList_8hpp.html 320,56 514,80
+rect $DelegateN_8hpp.html 324,104 510,128
+rect $FunctorN_8hpp.html 330,152 504,176

@@ -1,0 +1,6 @@
+base referer
+rect $Associative_8hpp.html 350,8 630,32
+rect $DelegateList_8hpp.html 348,56 633,80
+rect $DelegateTest3_8cc.html 682,8 946,32
+rect $DelegateTest1_8cc.html 684,56 945,80
+rect $DelegateTest2_8cc.html 682,104 946,128

@@ -1,0 +1,42 @@
+.TH "DL::DelegateBase" 3 "11 Mar 2005" "Version 0.0.4" "Extended C++ Callback Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DL::DelegateBase \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <DelegateBase.hpp>\fP
+.PP
+Inherited by \fBDL::Delegate0< ReturnType, ClassType >\fP, \fBDL::Delegate1< ReturnType, ClassType, Param1 >\fP, \fBDL::Delegate10< ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >\fP, \fBDL::Delegate2< ReturnType, ClassType, Param1, Param2 >\fP, \fBDL::Delegate3< ReturnType, ClassType, Param1, Param2, Param3 >\fP, \fBDL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >\fP, \fBDL::Delegate5< ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5 >\fP, \fBDL::Delegate6< ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6 >\fP, \fBDL::Delegate7< ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7 >\fP, \fBDL::Delegate8< ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8 >\fP, \fBDL::Delegate9< ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 >\fP, \fBDL::Functor0\fP, \fBDL::Functor1< ReturnType, Param1 >\fP, \fBDL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >\fP, \fBDL::Functor2< ReturnType, Param1, Param2 >\fP, \fBDL::Functor3< ReturnType, Param1, Param2, Param3 >\fP, \fBDL::Functor4< ReturnType, Param1, Param2, Param3, Param4 >\fP, \fBDL::Functor5< ReturnType, Param1, Param2, Param3, Param4, Param5 >\fP, \fBDL::Functor6< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6 >\fP, \fBDL::Functor7< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7 >\fP, \fBDL::Functor8< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8 >\fP, and \fBDL::Functor9< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 >\fP.
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDelegateBase\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~DelegateBase\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBInvoke\fP ()=0"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "DL::DelegateBase::DelegateBase ()\fC [inline]\fP"
+.PP
+Definition at line 28 of file DelegateBase.hpp.
+.SS "virtual DL::DelegateBase::~\fBDelegateBase\fP ()\fC [inline, virtual]\fP"
+.PP
+Definition at line 29 of file DelegateBase.hpp.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void DL::DelegateBase::Invoke ()\fC [pure virtual]\fP"
+.PP
+Implemented in \fBDL::Delegate0< ReturnType, ClassType >\fP, \fBDL::Delegate1< ReturnType, ClassType, Param1 >\fP, \fBDL::Delegate10< ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >\fP, \fBDL::Delegate2< ReturnType, ClassType, Param1, Param2 >\fP, \fBDL::Delegate3< ReturnType, ClassType, Param1, Param2, Param3 >\fP, \fBDL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >\fP, \fBDL::Delegate5< ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5 >\fP, \fBDL::Delegate6< ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6 >\fP, \fBDL::Delegate7< ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7 >\fP, \fBDL::Delegate8< ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8 >\fP, \fBDL::Delegate9< ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 >\fP, \fBDL::Functor0\fP, \fBDL::Functor1< ReturnType, Param1 >\fP, \fBDL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >\fP, \fBDL::Functor2< ReturnType, Param1, Param2 >\fP, \fBDL::Functor3< ReturnType, Param1, Param2, Param3 >\fP, \fBDL::Functor4< ReturnType, Param1, Param2, Param3, Param4 >\fP, \fBDL::Functor5< ReturnType, Param1, Param2, Param3, Param4, Param5 >\fP, \fBDL::Functor6< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6 >\fP, \fBDL::Functor7< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7 >\fP, \fBDL::Functor8< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8 >\fP, and \fBDL::Functor9< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 >\fP.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Extended C++ Callback Library from the source code.

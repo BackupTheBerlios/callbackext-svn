@@ -1,0 +1,163 @@
+.TH "DL::Functor10" 3 "11 Mar 2005" "Version 0.0.4" "Extended C++ Callback Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DL::Functor10 \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <Functor10.hpp>\fP
+.PP
+Inherits \fBDL::DelegateBase\fP.
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFunctor10\fP (ReturnType(*function)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10), Param1 val1=Param1(), Param2 val2=Param2(), Param3 val3=Param3(), Param4 val4=Param4(), Param5 val5=Param5(), Param6 val6=Param6(), Param7 val7=Param7(), Param8 val8=Param8(), Param8 val9=Param9(), Param8 val10=Param10())"
+.br
+.ti -1c
+.RI "virtual \fB~Functor10\fP ()"
+.br
+.ti -1c
+.RI "void \fBInvoke\fP ()"
+.br
+.ti -1c
+.RI "ReturnType \fBInvoke\fP (Param1 val1, Param2 val2, Param3 val3, Param4 val4, Param5 val5, Param6 val6, Param7 val7, Param8 val8, Param9 val9, Param10 val10)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFunctor10\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "ReturnType(* \fBm_function\fP )(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10)"
+.br
+.ti -1c
+.RI "Param1 \fBm_val1\fP"
+.br
+.ti -1c
+.RI "Param2 \fBm_val2\fP"
+.br
+.ti -1c
+.RI "Param3 \fBm_val3\fP"
+.br
+.ti -1c
+.RI "Param4 \fBm_val4\fP"
+.br
+.ti -1c
+.RI "Param5 \fBm_val5\fP"
+.br
+.ti -1c
+.RI "Param6 \fBm_val6\fP"
+.br
+.ti -1c
+.RI "Param7 \fBm_val7\fP"
+.br
+.ti -1c
+.RI "Param8 \fBm_val8\fP"
+.br
+.ti -1c
+.RI "Param9 \fBm_val9\fP"
+.br
+.ti -1c
+.RI "Param10 \fBm_val10\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> class DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >"
+Functor for 8 Param
+.PP
+Definition at line 40 of file Functor10.hpp.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBFunctor10\fP ()\fC [inline, private]\fP"
+.PP
+Definition at line 53 of file Functor10.hpp.
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBFunctor10\fP (ReturnType(*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10) function, Param1 val1 = \fCParam1()\fP, Param2 val2 = \fCParam2()\fP, Param3 val3 = \fCParam3()\fP, Param4 val4 = \fCParam4()\fP, Param5 val5 = \fCParam5()\fP, Param6 val6 = \fCParam6()\fP, Param7 val7 = \fCParam7()\fP, Param8 val8 = \fCParam8()\fP, Param8 val9 = \fCParam9()\fP, Param8 val10 = \fCParam10()\fP)\fC [inline]\fP"
+.PP
+Definition at line 55 of file Functor10.hpp.
+.PP
+References DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_function, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val1, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val10, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val2, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val3, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val4, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val5, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val6, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val7, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val8, and DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val9.
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> virtual \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::~\fBFunctor10\fP ()\fC [inline, virtual]\fP"
+.PP
+Definition at line 72 of file Functor10.hpp.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> ReturnType \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Invoke (Param1 val1, Param2 val2, Param3 val3, Param4 val4, Param5 val5, Param6 val6, Param7 val7, Param8 val8, Param9 val9, Param10 val10)\fC [inline]\fP"
+.PP
+Definition at line 77 of file Functor10.hpp.
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> void \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Invoke ()\fC [inline, virtual]\fP"
+.PP
+Implements \fBDL::DelegateBase\fP.
+.PP
+Definition at line 73 of file Functor10.hpp.
+.PP
+References DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val1, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val10, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val2, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val3, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val4, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val5, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val6, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val7, DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val8, and DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::m_val9.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> ReturnType(* \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBm_function\fP)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10)\fC [private]\fP"
+.PP
+Referenced by DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Functor10().
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> Param1 \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBm_val1\fP\fC [private]\fP"
+.PP
+Definition at line 43 of file Functor10.hpp.
+.PP
+Referenced by DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Functor10(), and DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Invoke().
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> Param10 \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBm_val10\fP\fC [private]\fP"
+.PP
+Definition at line 52 of file Functor10.hpp.
+.PP
+Referenced by DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Functor10(), and DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Invoke().
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> Param2 \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBm_val2\fP\fC [private]\fP"
+.PP
+Definition at line 44 of file Functor10.hpp.
+.PP
+Referenced by DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Functor10(), and DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Invoke().
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> Param3 \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBm_val3\fP\fC [private]\fP"
+.PP
+Definition at line 45 of file Functor10.hpp.
+.PP
+Referenced by DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Functor10(), and DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Invoke().
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> Param4 \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBm_val4\fP\fC [private]\fP"
+.PP
+Definition at line 46 of file Functor10.hpp.
+.PP
+Referenced by DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Functor10(), and DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Invoke().
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> Param5 \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBm_val5\fP\fC [private]\fP"
+.PP
+Definition at line 47 of file Functor10.hpp.
+.PP
+Referenced by DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Functor10(), and DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Invoke().
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> Param6 \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBm_val6\fP\fC [private]\fP"
+.PP
+Definition at line 48 of file Functor10.hpp.
+.PP
+Referenced by DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Functor10(), and DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Invoke().
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> Param7 \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBm_val7\fP\fC [private]\fP"
+.PP
+Definition at line 49 of file Functor10.hpp.
+.PP
+Referenced by DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Functor10(), and DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Invoke().
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> Param8 \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBm_val8\fP\fC [private]\fP"
+.PP
+Definition at line 50 of file Functor10.hpp.
+.PP
+Referenced by DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Functor10(), and DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Invoke().
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> Param9 \fBDL::Functor10\fP< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::\fBm_val9\fP\fC [private]\fP"
+.PP
+Definition at line 51 of file Functor10.hpp.
+.PP
+Referenced by DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Functor10(), and DL::Functor10< ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 >::Invoke().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Extended C++ Callback Library from the source code.

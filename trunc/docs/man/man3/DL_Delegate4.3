@@ -1,0 +1,125 @@
+.TH "DL::Delegate4" 3 "11 Mar 2005" "Version 0.0.4" "Extended C++ Callback Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DL::Delegate4 \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <Delegate4.hpp>\fP
+.PP
+Inherits \fBDL::DelegateBase\fP.
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDelegate4\fP (ClassType *class_obj, ReturnType(ClassType::*method)(Param1, Param2, Param3, Param4), Param1 val1=Param1(), Param2 val2=Param2(), Param3 val3=Param3(), Param4 val4=Param4())"
+.br
+.ti -1c
+.RI "virtual \fB~Delegate4\fP ()"
+.br
+.ti -1c
+.RI "void \fBInvoke\fP ()"
+.br
+.ti -1c
+.RI "void \fBInvoke\fP (Param1 val1, Param2 val2, Param3 val3, Param4 val4)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDelegate4\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "ClassType * \fBm_class_obj\fP"
+.br
+.ti -1c
+.RI "ReturnType(ClassType::* \fBm_method\fP )(Param1, Param2, Param3, Param4)"
+.br
+.ti -1c
+.RI "Param1 \fBm_val1\fP"
+.br
+.ti -1c
+.RI "Param2 \fBm_val2\fP"
+.br
+.ti -1c
+.RI "Param3 \fBm_val3\fP"
+.br
+.ti -1c
+.RI "Param4 \fBm_val4\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> class DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >"
+Delegate for 4 Param
+.PP
+Definition at line 35 of file Delegate4.hpp.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> \fBDL::Delegate4\fP< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::\fBDelegate4\fP ()\fC [inline, private]\fP"
+.PP
+Definition at line 43 of file Delegate4.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> \fBDL::Delegate4\fP< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::\fBDelegate4\fP (ClassType * class_obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4) method, Param1 val1 = \fCParam1()\fP, Param2 val2 = \fCParam2()\fP, Param3 val3 = \fCParam3()\fP, Param4 val4 = \fCParam4()\fP)\fC [inline]\fP"
+.PP
+Definition at line 45 of file Delegate4.hpp.
+.PP
+References DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_class_obj, DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_method, DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_val1, DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_val2, DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_val3, and DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_val4.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> virtual \fBDL::Delegate4\fP< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::~\fBDelegate4\fP ()\fC [inline, virtual]\fP"
+.PP
+Definition at line 55 of file Delegate4.hpp.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> void \fBDL::Delegate4\fP< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Invoke (Param1 val1, Param2 val2, Param3 val3, Param4 val4)\fC [inline]\fP"
+.PP
+Definition at line 60 of file Delegate4.hpp.
+.PP
+References DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_class_obj, and DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_method.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> void \fBDL::Delegate4\fP< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Invoke ()\fC [inline, virtual]\fP"
+.PP
+Implements \fBDL::DelegateBase\fP.
+.PP
+Definition at line 56 of file Delegate4.hpp.
+.PP
+References DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_class_obj, DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_method, DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_val1, DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_val2, DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_val3, and DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::m_val4.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> ClassType* \fBDL::Delegate4\fP< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::\fBm_class_obj\fP\fC [private]\fP"
+.PP
+Definition at line 37 of file Delegate4.hpp.
+.PP
+Referenced by DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Delegate4(), and DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Invoke().
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> ReturnType(ClassType::* \fBDL::Delegate4\fP< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::\fBm_method\fP)(Param1, Param2, Param3, Param4)\fC [private]\fP"
+.PP
+Referenced by DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Delegate4(), and DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Invoke().
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> Param1 \fBDL::Delegate4\fP< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::\fBm_val1\fP\fC [private]\fP"
+.PP
+Definition at line 39 of file Delegate4.hpp.
+.PP
+Referenced by DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Delegate4(), and DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Invoke().
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> Param2 \fBDL::Delegate4\fP< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::\fBm_val2\fP\fC [private]\fP"
+.PP
+Definition at line 40 of file Delegate4.hpp.
+.PP
+Referenced by DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Delegate4(), and DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Invoke().
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> Param3 \fBDL::Delegate4\fP< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::\fBm_val3\fP\fC [private]\fP"
+.PP
+Definition at line 41 of file Delegate4.hpp.
+.PP
+Referenced by DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Delegate4(), and DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Invoke().
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> Param4 \fBDL::Delegate4\fP< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::\fBm_val4\fP\fC [private]\fP"
+.PP
+Definition at line 42 of file Delegate4.hpp.
+.PP
+Referenced by DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Delegate4(), and DL::Delegate4< ReturnType, ClassType, Param1, Param2, Param3, Param4 >::Invoke().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Extended C++ Callback Library from the source code.

@@ -1,0 +1,315 @@
+.TH "DL" 3 "11 Mar 2005" "Version 0.0.4" "Extended C++ Callback Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DL \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBDeleter\fP"
+.br
+.ti -1c
+.RI "class \fBAssociative\fP"
+.br
+.ti -1c
+.RI "class \fBDelegateList\fP"
+.br
+.ti -1c
+.RI "class \fBDelegate0\fP"
+.br
+.ti -1c
+.RI "class \fBDelegate1\fP"
+.br
+.ti -1c
+.RI "class \fBDelegate10\fP"
+.br
+.ti -1c
+.RI "class \fBDelegate2\fP"
+.br
+.ti -1c
+.RI "class \fBDelegate3\fP"
+.br
+.ti -1c
+.RI "class \fBDelegate4\fP"
+.br
+.ti -1c
+.RI "class \fBDelegate5\fP"
+.br
+.ti -1c
+.RI "class \fBDelegate6\fP"
+.br
+.ti -1c
+.RI "class \fBDelegate7\fP"
+.br
+.ti -1c
+.RI "class \fBDelegate8\fP"
+.br
+.ti -1c
+.RI "class \fBDelegate9\fP"
+.br
+.ti -1c
+.RI "class \fBDelegateBase\fP"
+.br
+.ti -1c
+.RI "class \fBFunctor0\fP"
+.br
+.ti -1c
+.RI "class \fBFunctor1\fP"
+.br
+.ti -1c
+.RI "class \fBFunctor10\fP"
+.br
+.ti -1c
+.RI "class \fBFunctor2\fP"
+.br
+.ti -1c
+.RI "class \fBFunctor3\fP"
+.br
+.ti -1c
+.RI "class \fBFunctor4\fP"
+.br
+.ti -1c
+.RI "class \fBFunctor5\fP"
+.br
+.ti -1c
+.RI "class \fBFunctor6\fP"
+.br
+.ti -1c
+.RI "class \fBFunctor7\fP"
+.br
+.ti -1c
+.RI "class \fBFunctor8\fP"
+.br
+.ti -1c
+.RI "class \fBFunctor9\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef std::auto_ptr< \fBDelegateBase\fP > \fBDelegateObj\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<class ReturnType, class ClassType> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType &obj, ReturnType(ClassType::*Meth)())"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType *obj, ReturnType(ClassType::*Meth)())"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType &obj, ReturnType(ClassType::*Meth)(Param1), Param1 &param1)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType *obj, ReturnType(ClassType::*Meth)(Param1), Param1 &param1)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType &obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6, Param7 &param7, Param8 &param8, Param9 &param9, Param10 &param10)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType *obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6, Param7 &param7, Param8 &param8, Param9 &param9, Param10 &param10)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType &obj, ReturnType(ClassType::*Meth)(Param1, Param2), Param1 &param1, Param2 &param2)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType *obj, ReturnType(ClassType::*Meth)(Param1, Param2), Param1 &param1, Param2 &param2)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType &obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3), Param1 &param1, Param2 &param2, Param3 &param3)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType *obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3), Param1 &param1, Param2 &param2, Param3 &param3)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType &obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType *obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType &obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4, Param5), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType *obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4, Param5), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType &obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4, Param5, Param6), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType *obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4, Param5, Param6), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType &obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4, Param5, Param6, Param7), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6, Param7 &param7)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType *obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4, Param5, Param6, Param7), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6, Param7 &param7)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType &obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6, Param7 &param7, Param8 &param8)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType *obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6, Param7 &param7, Param8 &param8)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType &obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6, Param7 &param7, Param8 &param8, Param9 &param9)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9> \fBDelegateObj\fP \fBcreate_delegate\fP (ClassType *obj, ReturnType(ClassType::*Meth)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6, Param7 &param7, Param8 &param8, Param9 &param9)"
+.br
+.ti -1c
+.RI "\fBDelegateObj\fP \fBcreate_delegate\fP (void(*Meth)(void))"
+.br
+.ti -1c
+.RI "template<class ReturnType, class Param1> \fBDelegateObj\fP \fBcreate_delegate\fP (ReturnType(*Meth)(Param1), Param1 &param1)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> \fBDelegateObj\fP \fBcreate_delegate\fP (ReturnType(*Meth)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6, Param7 &param7, Param8 &param8, Param9 &param9, Param10 &param10)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class Param1, class Param2> \fBDelegateObj\fP \fBcreate_delegate\fP (ReturnType(*Meth)(Param1, Param2), Param1 &param1, Param2 &param2)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class Param1, class Param2, class Param3> \fBDelegateObj\fP \fBcreate_delegate\fP (ReturnType(*Meth)(Param1, Param2, Param3), Param1 &param1, Param2 &param2, Param3 &param3)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class Param1, class Param2, class Param3, class Param4> \fBDelegateObj\fP \fBcreate_delegate\fP (ReturnType(*Meth)(Param1, Param2, Param3, Param4), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5> \fBDelegateObj\fP \fBcreate_delegate\fP (ReturnType(*Meth)(Param1, Param2, Param3, Param4, Param5), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6> \fBDelegateObj\fP \fBcreate_delegate\fP (ReturnType(*Meth)(Param1, Param2, Param3, Param4, Param5, Param6), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7> \fBDelegateObj\fP \fBcreate_delegate\fP (ReturnType(*Meth)(Param1, Param2, Param3, Param4, Param5, Param6, Param7), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6, Param7 &param7)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8> \fBDelegateObj\fP \fBcreate_delegate\fP (ReturnType(*Meth)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6, Param7 &param7, Param8 &param8)"
+.br
+.ti -1c
+.RI "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9> \fBDelegateObj\fP \fBcreate_delegate\fP (ReturnType(*Meth)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9), Param1 &param1, Param2 &param2, Param3 &param3, Param4 &param4, Param5 &param5, Param6 &param6, Param7 &param7, Param8 &param8, Param9 &param9)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBDelegateList\fP is a Method Pointer Container 
+.PP
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef std::auto_ptr<\fBDelegateBase\fP> \fBDL::DelegateObj\fP"
+.PP
+Definition at line 33 of file DelegateBase.hpp.
+.SH "Function Documentation"
+.PP 
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9> \fBDelegateObj\fP create_delegate (ReturnType(*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6, Param7 & param7, Param8 & param8, Param9 & param9)"
+.PP
+Definition at line 85 of file Functor9.hpp.
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8> \fBDelegateObj\fP create_delegate (ReturnType(*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6, Param7 & param7, Param8 & param8)"
+.PP
+Definition at line 82 of file Functor8.hpp.
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7> \fBDelegateObj\fP create_delegate (ReturnType(*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6, Param7 & param7)"
+.PP
+Definition at line 78 of file Functor7.hpp.
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6> \fBDelegateObj\fP create_delegate (ReturnType(*)(Param1, Param2, Param3, Param4, Param5, Param6) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6)"
+.PP
+Definition at line 74 of file Functor6.hpp.
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5> \fBDelegateObj\fP create_delegate (ReturnType(*)(Param1, Param2, Param3, Param4, Param5) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5)"
+.PP
+Definition at line 71 of file Functor5.hpp.
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4> \fBDelegateObj\fP create_delegate (ReturnType(*)(Param1, Param2, Param3, Param4) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4)"
+.PP
+Definition at line 66 of file Functor4.hpp.
+.SS "template<class ReturnType, class Param1, class Param2, class Param3> \fBDelegateObj\fP create_delegate (ReturnType(*)(Param1, Param2, Param3) Meth, Param1 & param1, Param2 & param2, Param3 & param3)"
+.PP
+Definition at line 63 of file Functor3.hpp.
+.SS "template<class ReturnType, class Param1, class Param2> \fBDelegateObj\fP create_delegate (ReturnType(*)(Param1, Param2) Meth, Param1 & param1, Param2 & param2)"
+.PP
+Definition at line 60 of file Functor2.hpp.
+.SS "template<class ReturnType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> \fBDelegateObj\fP create_delegate (ReturnType(*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6, Param7 & param7, Param8 & param8, Param9 & param9, Param10 & param10)"
+.PP
+Definition at line 89 of file Functor10.hpp.
+.SS "template<class ReturnType, class Param1> \fBDelegateObj\fP create_delegate (ReturnType(*)(Param1) Meth, Param1 & param1)"
+.PP
+Definition at line 54 of file Functor1.hpp.
+.SS "\fBDelegateObj\fP create_delegate (void(*)(void) Meth)"
+.PP
+Definition at line 46 of file Functor0.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9> \fBDelegateObj\fP create_delegate (ClassType * obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6, Param7 & param7, Param8 & param8, Param9 & param9)"
+.PP
+Definition at line 102 of file Delegate9.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9> \fBDelegateObj\fP create_delegate (ClassType & obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6, Param7 & param7, Param8 & param8, Param9 & param9)"
+.PP
+Definition at line 88 of file Delegate9.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8> \fBDelegateObj\fP create_delegate (ClassType * obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6, Param7 & param7, Param8 & param8)"
+.PP
+Definition at line 98 of file Delegate8.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8> \fBDelegateObj\fP create_delegate (ClassType & obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6, Param7 & param7, Param8 & param8)"
+.PP
+Definition at line 84 of file Delegate8.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7> \fBDelegateObj\fP create_delegate (ClassType * obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6, Param7 & param7)"
+.PP
+Definition at line 94 of file Delegate7.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7> \fBDelegateObj\fP create_delegate (ClassType & obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6, Param7 & param7)"
+.PP
+Definition at line 81 of file Delegate7.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6> \fBDelegateObj\fP create_delegate (ClassType * obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4, Param5, Param6) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6)"
+.PP
+Definition at line 89 of file Delegate6.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6> \fBDelegateObj\fP create_delegate (ClassType & obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4, Param5, Param6) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6)"
+.PP
+Definition at line 77 of file Delegate6.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5> \fBDelegateObj\fP create_delegate (ClassType * obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4, Param5) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5)"
+.PP
+Definition at line 86 of file Delegate5.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5> \fBDelegateObj\fP create_delegate (ClassType & obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4, Param5) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5)"
+.PP
+Definition at line 74 of file Delegate5.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> \fBDelegateObj\fP create_delegate (ClassType * obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4)"
+.PP
+Definition at line 78 of file Delegate4.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4> \fBDelegateObj\fP create_delegate (ClassType & obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4)"
+.PP
+Definition at line 70 of file Delegate4.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3> \fBDelegateObj\fP create_delegate (ClassType * obj, ReturnType(ClassType::*)(Param1, Param2, Param3) Meth, Param1 & param1, Param2 & param2, Param3 & param3)"
+.PP
+Definition at line 76 of file Delegate3.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3> \fBDelegateObj\fP create_delegate (ClassType & obj, ReturnType(ClassType::*)(Param1, Param2, Param3) Meth, Param1 & param1, Param2 & param2, Param3 & param3)"
+.PP
+Definition at line 68 of file Delegate3.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2> \fBDelegateObj\fP create_delegate (ClassType * obj, ReturnType(ClassType::*)(Param1, Param2) Meth, Param1 & param1, Param2 & param2)"
+.PP
+Definition at line 68 of file Delegate2.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2> \fBDelegateObj\fP create_delegate (ClassType & obj, ReturnType(ClassType::*)(Param1, Param2) Meth, Param1 & param1, Param2 & param2)"
+.PP
+Definition at line 62 of file Delegate2.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> \fBDelegateObj\fP create_delegate (ClassType * obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6, Param7 & param7, Param8 & param8, Param9 & param9, Param10 & param10)"
+.PP
+Definition at line 105 of file Delegate10.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9, class Param10> \fBDelegateObj\fP create_delegate (ClassType & obj, ReturnType(ClassType::*)(Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10) Meth, Param1 & param1, Param2 & param2, Param3 & param3, Param4 & param4, Param5 & param5, Param6 & param6, Param7 & param7, Param8 & param8, Param9 & param9, Param10 & param10)"
+.PP
+Definition at line 91 of file Delegate10.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1> \fBDelegateObj\fP create_delegate (ClassType * obj, ReturnType(ClassType::*)(Param1) Meth, Param1 & param1)"
+.PP
+Definition at line 63 of file Delegate1.hpp.
+.SS "template<class ReturnType, class ClassType, class Param1> \fBDelegateObj\fP create_delegate (ClassType & obj, ReturnType(ClassType::*)(Param1) Meth, Param1 & param1)"
+.PP
+Definition at line 57 of file Delegate1.hpp.
+.SS "template<class ReturnType, class ClassType> \fBDelegateObj\fP create_delegate (ClassType * obj, ReturnType(ClassType::*)() Meth)"
+.PP
+Definition at line 51 of file Delegate0.hpp.
+.SS "template<class ReturnType, class ClassType> \fBDelegateObj\fP create_delegate (ClassType & obj, ReturnType(ClassType::*)() Meth)"
+.PP
+Definition at line 45 of file Delegate0.hpp.
+.PP
+Referenced by main().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Extended C++ Callback Library from the source code.

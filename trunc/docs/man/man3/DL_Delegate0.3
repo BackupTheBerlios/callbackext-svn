@@ -1,0 +1,81 @@
+.TH "DL::Delegate0" 3 "11 Mar 2005" "Version 0.0.4" "Extended C++ Callback Library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DL::Delegate0 \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <Delegate0.hpp>\fP
+.PP
+Inherits \fBDL::DelegateBase\fP.
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDelegate0\fP (ClassType *class_obj, ReturnType(ClassType::*method)())"
+.br
+.ti -1c
+.RI "virtual \fB~Delegate0\fP ()"
+.br
+.ti -1c
+.RI "void \fBInvoke\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDelegate0\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "ClassType * \fBm_class_obj\fP"
+.br
+.ti -1c
+.RI "ReturnType(ClassType::* \fBm_method\fP )()"
+.br
+.in -1c
+
+.SS "template<class ReturnType, class ClassType> class DL::Delegate0< ReturnType, ClassType >"
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class ReturnType, class ClassType> \fBDL::Delegate0\fP< ReturnType, ClassType >::\fBDelegate0\fP ()\fC [inline, private]\fP"
+.PP
+Definition at line 31 of file Delegate0.hpp.
+.SS "template<class ReturnType, class ClassType> \fBDL::Delegate0\fP< ReturnType, ClassType >::\fBDelegate0\fP (ClassType * class_obj, ReturnType(ClassType::*)() method)\fC [inline]\fP"
+.PP
+Definition at line 33 of file Delegate0.hpp.
+.PP
+References DL::Delegate0< ReturnType, ClassType >::m_class_obj, and DL::Delegate0< ReturnType, ClassType >::m_method.
+.SS "template<class ReturnType, class ClassType> virtual \fBDL::Delegate0\fP< ReturnType, ClassType >::~\fBDelegate0\fP ()\fC [inline, virtual]\fP"
+.PP
+Definition at line 37 of file Delegate0.hpp.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class ReturnType, class ClassType> void \fBDL::Delegate0\fP< ReturnType, ClassType >::Invoke ()\fC [inline, virtual]\fP"
+.PP
+Implements \fBDL::DelegateBase\fP.
+.PP
+Definition at line 38 of file Delegate0.hpp.
+.PP
+References DL::Delegate0< ReturnType, ClassType >::m_class_obj, and DL::Delegate0< ReturnType, ClassType >::m_method.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class ReturnType, class ClassType> ClassType* \fBDL::Delegate0\fP< ReturnType, ClassType >::\fBm_class_obj\fP\fC [private]\fP"
+.PP
+Definition at line 29 of file Delegate0.hpp.
+.PP
+Referenced by DL::Delegate0< ReturnType, ClassType >::Delegate0(), and DL::Delegate0< ReturnType, ClassType >::Invoke().
+.SS "template<class ReturnType, class ClassType> ReturnType(ClassType::* \fBDL::Delegate0\fP< ReturnType, ClassType >::\fBm_method\fP)()\fC [private]\fP"
+.PP
+Referenced by DL::Delegate0< ReturnType, ClassType >::Delegate0(), and DL::Delegate0< ReturnType, ClassType >::Invoke().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Extended C++ Callback Library from the source code.

@@ -1,0 +1,5 @@
+base referer
+rect $Delegate1_8hpp.html 325,104 509,128
+rect $DelegateList_8hpp.html 320,152 514,176
+rect $DelegateBase_8hpp.html 562,104 693,128
+rect $AlgorithmExt_8hpp.html 565,200 690,224

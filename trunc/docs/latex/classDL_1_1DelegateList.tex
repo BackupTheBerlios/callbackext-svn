@@ -1,0 +1,140 @@
+\hypertarget{classDL_1_1DelegateList}{
+\section{DL::Delegate\-List Class Reference}
+\label{classDL_1_1DelegateList}\index{DL::DelegateList@{DL::DelegateList}}
+}
+{\tt \#include $<$Delegate\-List.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual \hyperlink{classDL_1_1DelegateList_a0}{$\sim$Delegate\-List} ()
+\item 
+void \hyperlink{classDL_1_1DelegateList_a1}{add} (\hyperlink{namespaceDL_a0}{Delegate\-Obj} m\_\-obj)
+\item 
+void \hyperlink{classDL_1_1DelegateList_a2}{reverse\_\-call} ()
+\item 
+void \hyperlink{classDL_1_1DelegateList_a3}{call} ()
+\item 
+void \hyperlink{classDL_1_1DelegateList_a4}{operator()} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+std::deque$<$ \hyperlink{classDL_1_1DelegateBase}{Delegate\-Base} $\ast$ $>$ \hyperlink{classDL_1_1DelegateList_r0}{m\_\-obj\_\-list}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDL_1_1DelegateList_a0}{
+\index{DL::DelegateList@{DL::Delegate\-List}!~DelegateList@{$\sim$DelegateList}}
+\index{~DelegateList@{$\sim$DelegateList}!DL::DelegateList@{DL::Delegate\-List}}
+\subsubsection[$\sim$DelegateList]{\setlength{\rightskip}{0pt plus 5cm}virtual DL::Delegate\-List::$\sim$\hyperlink{classDL_1_1DelegateList}{Delegate\-List} ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classDL_1_1DelegateList_a0}
+
+
+
+
+Definition at line 32 of file Delegate\-List.hpp.
+
+References stdext::foreach(), and m\_\-obj\_\-list.
+
+Here is the call graph for this function:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classDL_1_1DelegateList_a0_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDL_1_1DelegateList_a1}{
+\index{DL::DelegateList@{DL::Delegate\-List}!add@{add}}
+\index{add@{add}!DL::DelegateList@{DL::Delegate\-List}}
+\subsubsection[add]{\setlength{\rightskip}{0pt plus 5cm}void DL::Delegate\-List::add (\hyperlink{namespaceDL_a0}{Delegate\-Obj} {\em m\_\-obj})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classDL_1_1DelegateList_a1}
+
+
+
+
+Definition at line 36 of file Delegate\-List.hpp.
+
+References m\_\-obj\_\-list.
+
+Referenced by main().\hypertarget{classDL_1_1DelegateList_a3}{
+\index{DL::DelegateList@{DL::Delegate\-List}!call@{call}}
+\index{call@{call}!DL::DelegateList@{DL::Delegate\-List}}
+\subsubsection[call]{\setlength{\rightskip}{0pt plus 5cm}void DL::Delegate\-List::call ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classDL_1_1DelegateList_a3}
+
+
+
+
+Definition at line 44 of file Delegate\-List.hpp.
+
+References stdext::foreach(), and m\_\-obj\_\-list.
+
+Referenced by main().
+
+Here is the call graph for this function:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classDL_1_1DelegateList_a3_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDL_1_1DelegateList_a4}{
+\index{DL::DelegateList@{DL::Delegate\-List}!operator()@{operator()}}
+\index{operator()@{operator()}!DL::DelegateList@{DL::Delegate\-List}}
+\subsubsection[operator()]{\setlength{\rightskip}{0pt plus 5cm}void DL::Delegate\-List::operator() ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classDL_1_1DelegateList_a4}
+
+
+\hyperlink{classDL_1_1DelegateList_a4}{Delegate\-List::operator()()} is used to emits all stored Delegates$<$$>$
+
+Definition at line 50 of file Delegate\-List.hpp.
+
+References stdext::foreach(), and m\_\-obj\_\-list.
+
+Here is the call graph for this function:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classDL_1_1DelegateList_a4_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{classDL_1_1DelegateList_a2}{
+\index{DL::DelegateList@{DL::Delegate\-List}!reverse_call@{reverse\_\-call}}
+\index{reverse_call@{reverse\_\-call}!DL::DelegateList@{DL::Delegate\-List}}
+\subsubsection[reverse\_\-call]{\setlength{\rightskip}{0pt plus 5cm}void DL::Delegate\-List::reverse\_\-call ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classDL_1_1DelegateList_a2}
+
+
+
+
+Definition at line 40 of file Delegate\-List.hpp.
+
+References stdext::foreach\_\-reverse(), and m\_\-obj\_\-list.
+
+Here is the call graph for this function:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classDL_1_1DelegateList_a2_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDL_1_1DelegateList_r0}{
+\index{DL::DelegateList@{DL::Delegate\-List}!m_obj_list@{m\_\-obj\_\-list}}
+\index{m_obj_list@{m\_\-obj\_\-list}!DL::DelegateList@{DL::Delegate\-List}}
+\subsubsection[m\_\-obj\_\-list]{\setlength{\rightskip}{0pt plus 5cm}std::deque$<$\hyperlink{classDL_1_1DelegateBase}{Delegate\-Base}$\ast$$>$ \hyperlink{classDL_1_1DelegateList_r0}{DL::Delegate\-List::m\_\-obj\_\-list}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classDL_1_1DelegateList_r0}
+
+
+
+
+Definition at line 55 of file Delegate\-List.hpp.
+
+Referenced by add(), call(), operator()(), reverse\_\-call(), and $\sim$Delegate\-List().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+/data/callbackext/Container/\hyperlink{DelegateList_8hpp}{Delegate\-List.hpp}\end{CompactItemize}
